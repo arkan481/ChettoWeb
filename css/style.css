@@ -151,6 +151,7 @@ header {
 }
 
 .btncont {
+    padding-bottom: 30px;
     justify-content: center;
     width: 100%;
     margin-top: 20px;
@@ -180,6 +181,12 @@ header {
 /* ############ MOBILE STYLIZATION ########### */
 
 @media(max-width: 900px) {
+
+    .popupouter {
+        width: 60%;
+        height: 35%;
+        justify-content: space-evenly;
+    }
 
     .pchetto {
         line-height: 50px;
