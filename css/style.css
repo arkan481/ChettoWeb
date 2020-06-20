@@ -1,5 +1,6 @@
 /* ########### DEFAULT ############# */
 body {
+    margin: 0;
     height: 100vh;
     background-image: url('/images/bodybg.png');
     background-size: cover;
@@ -101,6 +102,79 @@ header {
     color: white;
     text-transform: uppercase;
     font-family: Poppins;
+}
+
+
+/* ########### POP UP BOX STYLIZATION ################ */
+.popupbox {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    display: none;
+    /* INVISIBLE */
+}
+
+.popcontainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.popupouter {
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    width: 30%;
+    height: 30%;
+    background-color: darkgray;
+}
+
+.popupouter p {
+    text-align: center;
+    color: black;
+}
+
+.popupouter input {
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+}
+
+.btncont {
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#btnok {
+    width: 30%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: green;
+}
+
+#btncancel {
+    width: 30%;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: darkred;
 }
 
 /* ############ MOBILE STYLIZATION ########### */

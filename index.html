@@ -8,39 +8,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="maincontainer">
-        <header>
-            <nav>
-                <div class="centernav">
-                    <div class="navhome">
-                        <p>Home</p>
-                        <hr>
+    <div class="popcontainer">
+        <div class="maincontainer">
+            <header>
+                <nav>
+                    <div class="centernav">
+                        <div class="navhome">
+                            <p>Home</p>
+                            <hr>
+                        </div>
+                        <div class="navhome">
+                            <p>About Us</p>
+                            <hr>
+                        </div>
+                        <div class="navhome">
+                            <p>How-To</p>
+                            <hr>
+                        </div>
                     </div>
-                    <div class="navhome">
-                        <p>About Us</p>
-                        <hr>
-                    </div>
-                    <div class="navhome">
-                        <p>How-To</p>
-                        <hr>
+                </nav>
+            </header>
+            <div class="centercontainer">
+                <div class="textleft">
+                    <p class="pchetto">Chetto Project</p>
+                    <p class="pweb">Web Application</p>
+                    <p class="pdesc">Chat privately with a smart bot. Request an image, video <br> song and code using python</p>
+                    <div class="btnwrapper">
+                        <button id="btnStart" onclick="showPopUp()">Chat Now</button>
                     </div>
                 </div>
-            </nav>
-        </header>
-        <div class="centercontainer">
-            <div class="textleft">
-                <p class="pchetto">Chetto Project</p>
-                <p class="pweb">Web Application</p>
-                <p class="pdesc">Chat privately with a smart bot. Request an image, video <br> song and code using python</p>
-                <div class="btnwrapper">
-                    <button id="btnStart">Chat Now</button>
+                <div class="imageright">
+                    <img src="./images/robotimg.png" alt="robotimg" class="imgrobot">
                 </div>
             </div>
-            <div class="imageright">
-                <img src="./images/robotimg.png" alt="robotimg" class="imgrobot">
+        </div>
+        <div class="popupbox" id="boxpop">
+            <div class="popupouter">
+                <p>Your Name</p>
+                <input type="text">
+                <div class="btncont">
+                    <button id="btnok">OK</button>
+                    <button id="btncancel" onclick="hidePopUp()">Cancel</button>
+                </div>
             </div>
         </div>
     </div>
+    <script>
+        var popupBox = document.getElementById("boxpop");
+        function showPopUp() {
+            popupBox.style.display = "flex";
+        }
 
+        function hidePopUp() {
+            popupBox.style.display = "none";
+        }
+    </script>
 </body>
 </html>
