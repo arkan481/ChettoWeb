@@ -1,0 +1,93 @@
+/* ########### DEFAULT ############# */
+body {
+    height: 100vh;
+    background-image: url('/images/bodybg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Poppins;
+}
+
+.maincontainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ################ NAV BAR SYLIZATION ################# */
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.centernav {
+    flex-direction: row;
+    display: flex;
+}
+
+.navhome {
+    margin-left: 60px;
+    color: #1AAFD3;
+    display: flex;
+    flex-direction: column;
+}
+
+.navhome hr {
+    display: inline-block;
+    width: 40%;
+}
+
+/* ############# CENTER CONTAINER STYLIZATION############ */
+
+.centercontainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.textleft {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+}
+
+.imgrobot {
+    float: right;
+    width: 70%;
+    height: auto;
+}
+
+.pchetto {
+    line-height: 0;
+    color: white;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.pweb {
+    color: #1AAFD3;
+    opacity: 50%;
+    font-size: 2em;
+    line-height: 0;
+}
+
+.pdesc {
+    color: #1AAFD3;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+/* ############ MOBILE STYLIZATION ########### */
+
+@media(max-width: 900px) {
+    .centercontainer {
+        display: flex;
+        flex-direction: column;
+    }
+}
