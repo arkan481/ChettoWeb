@@ -178,9 +178,17 @@ header {
     background-color: darkred;
 }
 
+button:hover {
+    background-color :#ffbf00 !important;
+}
+
 /* ############ MOBILE STYLIZATION ########### */
 
 @media(max-width: 900px) {
+
+    .maincontainer {
+        height: 100%;
+    }
 
     .popupouter {
         width: 60%;
@@ -194,6 +202,7 @@ header {
 
     body {
         background-size: inherit;
+        height: 100%;
     }
 
     nav {
