@@ -107,6 +107,14 @@ header {
 
 @media(max-width: 900px) {
 
+    .pchetto {
+        line-height: 50px;
+    }
+
+    body {
+        background-size: inherit;
+    }
+
     nav {
         width: 100%;
     }
@@ -121,6 +129,7 @@ header {
     }
 
     .centercontainer {
+        margin-top: 39px;
         display: flex;
         flex-direction: column;
     }
@@ -131,8 +140,15 @@ header {
         height: auto;
     }
 
-    .imgrobot {
+    .imageright {
+        margin-top: 20px;
         width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgrobot {
+        width: 80%;
         float: unset;
     }
 }
