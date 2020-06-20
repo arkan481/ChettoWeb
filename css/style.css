@@ -83,11 +83,56 @@ header {
     font-weight: lighter;
 }
 
+.btnwrapper {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+}
+
+#btnStart {
+    border-radius: 32px;
+    width: 40%;
+    height: 100%;
+    border-color: teal;
+    background-color: rebeccapurple;
+    opacity: 60%;
+    border-width: 1px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Poppins;
+}
+
 /* ############ MOBILE STYLIZATION ########### */
 
 @media(max-width: 900px) {
+
+    nav {
+        width: 100%;
+    }
+
+    .centernav {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .navhome {
+        margin: 0;
+    }
+
     .centercontainer {
         display: flex;
         flex-direction: column;
+    }
+
+    .textleft {
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .imgrobot {
+        width: 100%;
+        float: unset;
     }
 }
