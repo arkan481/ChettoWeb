@@ -1,0 +1,41 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.maincontainer {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background-color: red;
+}
+
+.chatbox {
+    padding-top: 30px;
+    flex-direction: column;
+    overflow: scroll;
+    width: 100%;
+    height: 90vh;
+    background-color: royalblue;
+    display: flex;
+}
+
+.horsend {
+    width: 100%;
+    height: 10vh;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+}
+
+.sendbox {
+    flex-grow: 1;
+}
+
+
+
+
+
+
