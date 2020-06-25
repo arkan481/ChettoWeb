@@ -36,7 +36,6 @@ function replyChatBubble() {
     var div = document.createElement("div");
     var span = document.createElement("span");
 
-
     span.style.borderRadius = "15px";
     span.style.marginLeft = "30px";
     span.style.paddingTop = "10px";
@@ -58,7 +57,7 @@ function replyWithSpotify() {
     var div = document.createElement("div");
     var spot = document.createElement("iframe");
     spot.style.marginLeft = "10px";
-    spot.src = "https://open.spotify.com/embed/track/1OE5l6sedVcIFELMuxQOPI";
+    spot.src = "https://open.spotify.com/embed/track/0QnONzv3TvHAWk294h6DaQ";
     spot.allow = "encrypted-media";
     spot.frameBorder = "0";
     spot.allowtransparency = "true";
@@ -98,7 +97,6 @@ function replyWithWiki() {
     iframe.allowtransparency = "true";
     iframe.width = "50%";
     iframe.height = "380";
-
     div.appendChild(iframe);
 
     return div;
