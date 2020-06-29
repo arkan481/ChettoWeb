@@ -2,13 +2,16 @@ body {
     margin: 0;
     width: 100%;
     height: 100vh;
+}
 
+@font-face {
+    font-family: 'productsans';
+    src: url('../fonts/ProductSans.ttf');
 }
 
 .maincontainer {
     width: 100%;
     height: 100%;
-    background-color: red;
     display: flex;
     flex-direction: row;
 }
@@ -19,7 +22,6 @@ body {
     background-color:#F5F8FA;
     display: flex;
     flex-direction: column;
-
 }
 
 .containerkanan{
@@ -27,45 +29,98 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+}
 
+.boxprofile {
+    margin-top: 20px;
+    width: 100%;
+    height: 77px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.logoutwrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logoutbox {
+    width: 220px;
+    height: 52px;
+    background-color: #FF5F5F;
+    border-radius: 10px;
+    box-shadow: darkgray 3px 3px 3px 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.gifimg {
+    height: auto;
+    width: 100%;
+    margin-bottom: 100px;
 }
 
 .boxkiri{
     width: 100%;
     height: 77px;
-    margin-bottom: 10px;
-    padding: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
+#inboxid {
+    background-color: white;
+}
+
+.bluediv {
+    width: 6px;
+    height: 51px;
+    background-color: #1FB5EB;
+    margin-right: 20px;
+    opacity: 0;
+}
+
+.boxkiri:hover {
+    background-color: white;
+}
+
+#blueinbox {
+    opacity: 100% !important;
+}
+
 .profilimage{
-    width: 70px;
-    height: 70px;
-
-
+    width: 50px;
+    height: 50px;
 }
 
 .username{
     text-align: left;
-    font: Bold 20px/24px Product Sans;
+    font: Bold 20px/24px productsans;
     letter-spacing: 0px;
-    color: #1FB5EB;
     opacity: 1;  
     margin-left: 18px;   
 }
 
 .logo{
     width: 25px;
-    height: 25px;
+    height: auto
 }
 
 .textlogo{
     text-align: left;
-    font: Bold 24px/29px Product Sans;
+    font: Bold 24px/29px;
+    font-family: ProductSans;
     letter-spacing: 0px;
-    color: #1FB5EB;
     opacity: 1;
     margin-left: 28px;
 }
@@ -73,20 +128,28 @@ body {
 .chatbox{
     width: 100%;
     flex-grow: 1;
-    background-color: red;
+    background-color: white;
+}
+
+.wrapperinbox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .inboxsend{
-    width: 100%;
+    border: #33333333 solid 1px;
+    width: 80%;
     height: 58px;
     background-color: white;
     margin-left: 30px;
-    margin-right: 30px;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+    margin-bottom: 20px;
 }
 
 input{
@@ -94,5 +157,10 @@ input{
     width: 90%;
     border: none;
     margin-left: 20px;
-    
+}
+
+.logp {
+    color: white;
+    font-family: productsans;
+    margin-left: 5px;
 }
