@@ -1,10 +1,11 @@
 var chatBox=document.getElementById("chatid");
 var input=document.getElementById("inputid");
+var userNotes = [];
 
 function append(){
     chatBox.appendChild(createuserchat());
     var userInput = input.value;
-    var command = userInput.split(" ");
+    var command = userInput.split(".");
     if (command[0] == "--img") {
         chatBox.appendChild(replyimage(command[1]));
     }else if (command[0]=="--wiki") {
@@ -13,6 +14,11 @@ function append(){
         chatBox.appendChild(replyspot());
     }else if(command[0]=="--clear") {
         chatBox.textContent = "";
+    }else if(command[0]=="--savenote") {
+        var notes = command[1].split(",");
+        chatBox.appendChild(saveNote(notes));
+    }else if(command[0]=="--seenote") {
+        chatBox.appendChild(seeNote());
     }
     updateState();
 }
@@ -20,6 +26,77 @@ function append(){
 function updateState() {
     chatBox.scrollTop = chatBox.scrollHeight;
     input.value="";
+}
+
+function saveNote(notes) {
+    // Pushing the array into a global variable
+    notes.forEach(element => {
+        userNotes.push(element);
+    });
+    var div = document.createElement("div");
+    var img = document.createElement("img");
+    img.src =`https://cdn.dribbble.com/users/42048/screenshots/8350927/robotintro_dribble.gif`;
+    img.width = "550";
+    img.height = "380";
+    img.style.borderTopRightRadius = "15px";
+    img.style.borderTopLeftRadius = "15px";
+
+    div.style.marginTop = "20px";
+    div.style.width = "550px";
+    div.style.height = "auto";
+    div.style.boxShadow="darkgrey 5px 5px 5px 5px";
+    div.style.marginLeft="20px";
+    div.style.borderRadius = "15px";
+    div.style.textAlign = "right";
+    div.style.marginTop= "35px";
+    div.style.display = "flex";
+    div.style.flexDirection = "column";
+
+    var span=document.createElement("span");
+    span.style.borderBottomLeftRadius = "15px";
+    span.style.borderBottomRightRadius = "15px";
+    span.style.paddingTop ="10px";
+    span.style.paddingBottom ="10px";
+    span.style.textAlign = "center";
+    span.style.backgroundColor ="#4c89d4";
+    span.style.color = "white";
+    span.style.fontFamily = "productsans";
+    span.style.fontSize = "1em";
+    span.textContent = "Your Note Was Successfully Saved!";
+    div.appendChild(img);
+    div.appendChild(span);
+    div.style.marginBottom = "40px";
+    return div;
+}
+
+function seeNote() {
+    var div=document.createElement("div");
+    var span=document.createElement("span");
+    span.style.borderRadius = "15px";
+    span.style.paddingTop = "12px";
+    span.style.paddingBottom = "12px";
+    span.style.paddingRight = "25px";
+    span.style.paddingLeft = "25px";
+    span.style.backgroundColor ="#4c89d4";
+    span.style.color = "white";
+    span.style.fontFamily = "productsans";
+    span.style.whiteSpace = "pre-line";
+    span.style.height = "auto";
+    span.style.fontSize = "1em";
+    div.style.height = "auto";
+    div.style.display = "flex";
+    div.style.borderRadius = "15px";
+    div.style.marginTop= "35px";
+    span.innerHTML = "Your Notes Are:\n\n";
+    var i =1;
+    userNotes.forEach(element => {
+        span.textContent += i+". "+element+"\n"
+        i++;
+    });
+    div.style.marginLeft= "20px";
+    div.style.marginBottom = "40px";
+    div.appendChild(span);
+    return div;
 }
 
 function createuserchat(){
@@ -33,6 +110,8 @@ function createuserchat(){
     span.style.paddingLeft = "25px";
     span.style.backgroundColor ="#4c89d4";
     span.style.color = "white";
+    span.style.fontFamily = "productsans";
+    span.style.fontSize = "1em";
     div.style.borderRadius = "15px";
     div.style.textAlign = "right";
     div.style.marginTop= "35px";
