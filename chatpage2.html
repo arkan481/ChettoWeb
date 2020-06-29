@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./fonts/ProductSans.ttf">
 </head>
 
-<body>
+<body onload="replyhi()">
     <div class="maincontainer">
         <div class="containerkiri">
             <div class="boxprofile">
@@ -45,18 +45,19 @@
             </div>
         </div>
         <div class="containerkanan">
-            <div class="chatbox">
+            <div id="chatid" class="chatbox">
                 
             </div>
             <div class="wrapperinbox">
                 <div class="inboxsend">
-                    <input type="text" placeholder="Type Message…">
-                    <img class="logo" src="images/send.png" alt="">
+                    <input id="inputid" type="text" placeholder="Type Message…">
+                    <img class="logo" onclick="append()" src="images/send.png" alt="">
                 </div>
             </div>
 
         </div>
     </div>
+    <script src="./js/chatpage2.js"></script>
 </body>
 
 </html>

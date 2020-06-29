@@ -126,6 +126,7 @@ body {
 }
 
 .chatbox{
+    padding-top: 20px;
     width: 100%;
     flex-grow: 1;
     background-color: white;
