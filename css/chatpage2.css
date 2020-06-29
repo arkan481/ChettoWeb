@@ -61,13 +61,13 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 
 
 .gifimg {
     height: auto;
     width: 100%;
-    margin-bottom: 100px;
 }
 
 .boxkiri{
@@ -164,3 +164,8 @@ input{
     font-family: productsans;
     margin-left: 5px;
 }
+
+/* .test {
+    border-radius: 10px;
+    box-shadow: darkgray 3px 3px 3px 3px;
+} */
