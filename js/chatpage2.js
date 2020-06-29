@@ -7,7 +7,12 @@ function append(){
     var command = userInput.split(" ");
     if (command[0] == "--img") {
         chatBox.appendChild(replyimage(command[1]));
+    }else if (command[0]=="--wiki") {
+        chatBox.appendChild(replywiki(command[1]));
+    }else if (command[0]=="--spot") {
+        chatBox.appendChild(replyspot());
     }
+    input.value="";
 }
 
 function createuserchat(){
@@ -55,6 +60,40 @@ function replyimage(gambar){
     div.style.marginTop = "20px";
 
     div.appendChild(img);
+
+    return div;
+
+}
+
+function replywiki(wiki){
+    var div = document.createElement("div");
+    var iframe = document.createElement("iframe");
+
+    iframe.style.marginLeft = "10px";
+    iframe.src = `https://en.wikipedia.org/w/index.php?title=${wiki}&printable=yes`;
+    iframe.frameBorder = "0";
+    iframe.allowtransparency = "true";
+    iframe.width = "50%";
+    iframe.height = "380";
+    div.appendChild(iframe);
+
+    return div;
+}
+
+function replyspot(){
+    var div = document.createElement("div");
+    var spot = document.createElement("iframe");
+    spot.style.marginLeft = "10px";
+    spot.src = "https://open.spotify.com/embed/track/0QnONzv3TvHAWk294h6DaQ";
+    spot.allow = "encrypted-media";
+    spot.frameBorder = "0";
+    spot.allowtransparency = "true";
+    spot.width = "300";
+    spot.height = "380";
+
+    div.style.marginTop = "20px";
+
+    div.appendChild(spot);
 
     return div;
 
