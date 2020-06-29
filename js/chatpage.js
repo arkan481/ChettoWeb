@@ -4,6 +4,7 @@ var chatinput = document.getElementById("chatinput");
 function append() {
     chatBox.appendChild(createChatBubble());
     if(chatinput.value == "spot") {
+        chatinput.split
         chatBox.appendChild(replyWithSpotify());
     }else if (chatinput.value == "img") {
         chatBox.appendChild(replyWithImage());

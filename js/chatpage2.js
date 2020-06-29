@@ -3,9 +3,10 @@ var input=document.getElementById("inputid");
 
 function append(){
     chatBox.appendChild(createuserchat());
-    if (input.value=="--img") 
-        var gambar=input.value.split(" ");
-        replyhi(gambar[1]);
+    var userInput = input.value;
+    var command = userInput.split(" ");
+    if (command[0] == "--img") {
+        chatBox.appendChild(replyimage(command[1]));
     }
 }
 
