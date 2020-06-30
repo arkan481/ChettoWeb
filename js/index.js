@@ -18,3 +18,15 @@ function redirectToChat() {
         window.location = "../chatpage2.html";
     }
 }
+
+function redirectAboutUs() {
+    window.location = "./aboutus.html";
+}
+
+function redirectHowTo() {
+    window.location = "./howto.html";
+}
+
+function redirectIndex() {
+    window.location = "./index.html";
+}

@@ -159,7 +159,6 @@ function replyimage(gambar){
     div.appendChild(img);
     div.style.marginBottom = "40px";
     return div;
-
 }
 
 function replywiki(wiki){

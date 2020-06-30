@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/aboutus.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="popcontainer">
+        <div class="maincontainer">
+            <header>
+                <nav>
+                    <div class="centernav">
+                        <div class="navhome" onclick="redirectIndex()">
+                            <p>Home</p>
+                            <hr id="hrhome">
+                        </div>
+                        <div class="navhome">
+                            <p>About Us</p>
+                            <hr>
+                        </div>
+                        <div class="navhome" onclick="redirectHowTo()">
+                            <p>How-To</p>
+                            <hr id="hrhow">
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="centercontainer">
+                <div class="textleft">
+                    <p class="pabout">Hello my name is Mibot</p>
+                    <p class="pdesc">I was built in year 2020 using 3 wonderful technologies. CSS, HTML, <br> and Javascript. My creators also makes me stronger by embedding <br> informative and fun application like Spotify, Wikipedia, and <br> source unsplash!.</p>
+                    <p class="pdesc">Uh Oh, while you're here, please meet my creators  and get <br> in touch with them. Click on their profile to say hi to them <br> on github!.</p>
+                    <div class="horimg">
+                        <a href="https://github.com/arkan481">
+                            <div class="userdiv">
+                                <img src="https://avatars2.githubusercontent.com/u/6422482?s=400&u=1e8724230d8d2a259d754a1b580af5e52db552f4&v=4" alt="" class="userimg">
+                                <p class="pdesc">Arkan Haryo</p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/finobasri">
+                            <div class="userdiv" onclick="userFino()">
+                                <img src="https://smashel.com/wp-content/uploads/2017/12/chat-bot.png" alt="" class="userimg">
+                                <p class="pdesc">Fino Basri</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="imageright">
+                    <img src="./images/robotimg.png" alt="robotimg" class="imgrobot">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="text/javascript" src="./js/aboutus.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>

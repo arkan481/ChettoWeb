@@ -238,3 +238,21 @@ input{
     border-radius: 10px;
     box-shadow: darkgray 3px 3px 3px 3px;
 } */
+
+@media(max-width: 860px) {
+    .containerkiri {
+        display: none;
+    }
+
+    .containerkanan {
+        width: 100%;
+    }
+
+    .inboxsend {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+        padding-right: 10px;
+    }
+
+}
