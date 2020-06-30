@@ -172,6 +172,68 @@ input{
     margin-left: 5px;
 }
 
+.outercont {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.blackbox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 90%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoutfloatbox {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnwrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnbox {
+    width: 40%;
+    height: 50px;
+    border-radius: 8px;
+    color: white;
+    font-family: productsans;
+    font-size: 1.2em;
+    border: none;
+}
+
+#yesbtn {
+    background-color: teal;
+}
+
+#nobtn {
+    margin-left: 10px;
+    background-color: tomato;
+}
+
+.plogoutbox {
+    text-align: center;
+    font-family: productsans;
+}
+
 /* .test {
     border-radius: 10px;
     box-shadow: darkgray 3px 3px 3px 3px;

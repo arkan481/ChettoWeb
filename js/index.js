@@ -14,6 +14,7 @@ function redirectToChat() {
     if (name.length == 0) {
         alert("Please Input Your Name");
     }else {
-        window.location = "../chatpage.html";
+        localStorage["name"] = name;
+        window.location = "../chatpage2.html";
     }
 }

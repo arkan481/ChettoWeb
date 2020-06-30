@@ -138,6 +138,8 @@ function replyhi(){
     div.appendChild(img);
 
     chatBox.appendChild(div);
+
+    getName();
 }
 
 function replyimage(gambar){
@@ -205,4 +207,23 @@ function replyspot(){
 
     return div;
 
+}
+
+function showPopUp() {
+    var popUpBox = document.getElementById("blackboxid");
+    popUpBox.style.display = "flex";
+}
+
+function hidePopUp() {
+    var popUpBox = document.getElementById("blackboxid");
+    popUpBox.style.display = "none";
+}
+
+function redirectToIndex() {
+    window.location = "../index.html";
+}
+
+function getName() {
+    var usernameP = document.getElementById("unp");
+    usernameP.textContent = localStorage["name"];
 }
