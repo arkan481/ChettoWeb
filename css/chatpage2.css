@@ -229,6 +229,11 @@ input{
     background-color: tomato;
 }
 
+a{
+    text-decoration: none;
+    color: unset;
+}
+
 .plogoutbox {
     text-align: center;
     font-family: productsans;
