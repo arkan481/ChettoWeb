@@ -1,5 +1,6 @@
 var chatBox=document.getElementById("chatid");
 var input=document.getElementById("inputid");
+var songs=["https://open.spotify.com/embed/track/1BKer1j3IYeAN07Su5f55P","https://open.spotify.com/embed/track/2wAiFWjRupWmnDkQcu91MF","https://open.spotify.com/embed/track/5drW6PGRxkE6MxttzVLNk5","https://open.spotify.com/embed/track/2dIBMHByUGcNPzmYBJ6OAj","https://open.spotify.com/embed/track/4qOpQXiEDEvt8MhYCGcwB6","https://open.spotify.com/embed/track/4YSOlJJoFu4vfZYJUiewl9","https://open.spotify.com/embed/track/3CBxVM0zGj41BQtE6m7gwb","https://open.spotify.com/embed/track/08OPqLv99g8avzmxQepmiw","https://open.spotify.com/embed/track/3kj14iUwv0rvTweOr9P2ut","https://open.spotify.com/embed/track/1BKer1j3IYeAN07Su5f55P","https://open.spotify.com/embed/track/0QnONzv3TvHAWk294h6DaQ","https://open.spotify.com/embed/track/1OE5l6sedVcIFELMuxQOPI","https://open.spotify.com/embed/track/2yBVeksU2EtrPJbTu4ZslK","https://open.spotify.com/embed/track/4VGvosVIeFMCUwHibq7a9Z"];
 var userNotes = [];
 
 function append(){
@@ -185,7 +186,8 @@ function replywiki(wiki){
 function replyspot(){
     var div = document.createElement("div");
     var spot = document.createElement("iframe");
-    spot.src = "https://open.spotify.com/embed/track/0QnONzv3TvHAWk294h6DaQ";
+    var randomIndex=Math.floor(Math.random() *songs.length);
+    spot.src = songs[randomIndex];
     spot.allow = "encrypted-media";
     spot.frameBorder = "0";
     spot.allowtransparency = "true";
