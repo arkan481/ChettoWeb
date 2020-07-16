@@ -1,5 +1,7 @@
 var popupBox = document.getElementById("boxpop");
 var nameInput = document.getElementById("nameinput");
+var slideIndex = 1;
+var tutorBox = document.getElementsByClassName("tutorbox");
 
 function showPopUp() {
     popupBox.style.display = "flex";
@@ -30,3 +32,26 @@ function redirectHowTo() {
 function redirectIndex() {
     window.location = "./index.html";
 }
+
+function userArkan() {
+    window.location = "https://github.com/arkan481";
+}
+
+function userFino() {
+    window.location = "https://github.com/finobasri";
+    alert("asdd");
+}
+
+function changeSlide(option) {
+    showDivs(slideIndex += option);
+}
+
+function showDivs(index) {
+    var i;
+    if (index > tutorBox.length) {slideIndex = 1}
+    if (index < 1) {slideIndex = tutorBox.length} ;
+    for (i = 0; i < tutorBox.length; i++) {
+      tutorBox[i].style.display = "none";
+    }
+    tutorBox[slideIndex-1].style.display = "block";
+  }
